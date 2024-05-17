@@ -48,12 +48,17 @@ int main() {
                 break;
             case 4:
                 enterNumbers(&number1, &number2);
-                if(number2 == 0){
-                    printf("division by zero is not possible");
-                }
-                else{
+                if (number2!= 0) {
                     result = number1 / number2;
                     printf("%d / %d = %d\n", number1, number2, result);
+                } else {
+                    if (number1 == 0) {
+                        printf("%d / %d = NaN\n", number1, number2);
+                    } else if (number1 > 0) {
+                        printf("%d / %d = +INF\n", number1, number2);
+                    } else {
+                        printf("%d / %d = -INF\n", number1, number2);
+                    }
                 }
                 break;
             default:
