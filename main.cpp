@@ -51,13 +51,9 @@ int main() {
                 if (number2!= 0) {
                     result = number1 / number2;
                     printf("%d / %d = %d\n", number1, number2, result);
-                } else {
-                    if (number1 == 0) {
-                        printf("%d / %d = NaN\n", number1, number2);
-                    } else {
+                }  else {
                         printf("wrong\n");
                     }
-                }
                 break;
             default:
                 printf("Choose the right option...\n\n");
