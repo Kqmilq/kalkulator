@@ -54,10 +54,8 @@ int main() {
                 } else {
                     if (number1 == 0) {
                         printf("%d / %d = NaN\n", number1, number2);
-                    } else if (number1 > 0) {
-                        printf("%d / %d = +INF\n", number1, number2);
                     } else {
-                        printf("%d / %d = -INF\n", number1, number2);
+                        printf("wrong\n");
                     }
                 }
                 break;
